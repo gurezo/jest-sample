@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class SampleService {
 
   constructor() { }
+
+  method(): number {
+    return 1;
+  }
 }
