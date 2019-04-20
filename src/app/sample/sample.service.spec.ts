@@ -3,10 +3,18 @@ import { TestBed } from '@angular/core/testing';
 import { SampleService } from './sample.service';
 
 describe('SampleService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}));
+  let service: SampleService;
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.get(SampleService);
+  });
 
   it('should be created', () => {
-    const service: SampleService = TestBed.get(SampleService);
     expect(service).toBeTruthy();
+  });
+
+  it('method() check', () => {
+    spyOn(service, 'method').and.callThrough();
+    expect(service.method()).toBe(1);
   });
 });
