@@ -1,16 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { SampleService } from './sample.service';
 import { SampleComponent } from './sample.component';
 
 describe('SampleComponent', () => {
   let component: SampleComponent;
   let fixture: ComponentFixture<SampleComponent>;
+  let service: SampleService;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SampleComponent ]
-    })
-    .compileComponents();
+      declarations: [SampleComponent],
+      providers: [SampleService]
+    }).compileComponents();
+    service = TestBed.get(SampleService);
   }));
 
   beforeEach(() => {
@@ -27,5 +30,11 @@ describe('SampleComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('sample components!!!');
+  });
+
+  it('ngOnInit() check', () => {
+    spyOn(service, 'method');
+    component.ngOnInit();
+    expect(service.method).toHaveBeenCalled();
   });
 });
