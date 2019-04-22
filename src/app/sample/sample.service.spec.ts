@@ -14,7 +14,7 @@ describe('SampleService', () => {
   });
 
   it('method() check', () => {
-    spyOn(service, 'method').and.callThrough();
+    jest.spyOn(service, 'method');
     expect(service.method()).toBe(1);
   });
 });
