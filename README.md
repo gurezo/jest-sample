@@ -29,5 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # For reference
 - [Angular CLI: “ng test” with Jest in 3 minutes](https://codeburst.io/angular-6-ng-test-with-jest-in-3-minutes-b1fe5ed3417c)
 - [Integrate Jest into an Angular application and library](https://blog.angularindepth.com/integrate-jest-into-an-angular-application-and-library-163b01d977ce)
+- [Angular案件でテストが遅すぎるので速くした](https://speakerdeck.com/okunokentaro/performance-tuning-for-the-angular-testing)
 - [Angular Webpack Starterで作成したアプリにJestを導入した話](https://qiita.com/tronperidot/items/8c7bec45924c0724f06e)
 - [既存のAngularプロジェクトにJestを導入する方法](https://qiita.com/rena_m/items/42e7eede8f6cd411f111)
