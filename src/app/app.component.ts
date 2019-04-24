@@ -1,3 +1,4 @@
+import expect from 'expect';
 import { Component } from '@angular/core';
 
 @Component({

@@ -1,3 +1,4 @@
+import expect from 'expect';
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
@@ -8,7 +9,7 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  test('should display welcome message', () => {
     page.navigateTo();
     expect(page.getTitleText()).toEqual('Welcome to jest-sample!');
   });

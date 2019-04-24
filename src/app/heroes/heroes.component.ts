@@ -1,3 +1,4 @@
+import expect from 'expect';
 import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '../hero';

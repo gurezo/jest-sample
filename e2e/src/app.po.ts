@@ -1,3 +1,4 @@
+import expect from 'expect';
 import { browser, by, element } from 'protractor';
 
 export class AppPage {

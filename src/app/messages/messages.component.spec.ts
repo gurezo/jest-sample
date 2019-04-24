@@ -1,3 +1,4 @@
+import expect from 'expect';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MessagesComponent } from './messages.component';
@@ -19,7 +20,7 @@ describe('MessagesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  test('should be created', () => {
     expect(component).toBeTruthy();
   });
 });
