@@ -1,4 +1,5 @@
-# JestSample
+# jest-sample
+this is jest sample by angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
