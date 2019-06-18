@@ -33,7 +33,7 @@ describe('SampleComponent', () => {
   });
 
   it('ngOnInit() check', () => {
-    spyOn(service, 'method');
+    jest.spyOn(service, 'method');
     component.ngOnInit();
     expect(service.method).toHaveBeenCalled();
   });
